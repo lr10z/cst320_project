@@ -1,0 +1,56 @@
+﻿Program	- Func_Key id (IdList) Func_Block Exit		
+Func_Key - void
+Func_Key - int	
+IdList - int id IdList2
+IdList - lambda
+IdList2	- , IdList
+IdList2 - lambda
+Func_Block - { Func_Body } 
+Func_Body - Data_Def Statement Statement
+Data_Def - int id Data_Def2 Data_Def
+Data_Def - lambda
+Data_Def2 - ;
+Data_Def2 - = Primary ;
+Statement -	if Statement2			 
+Statement -	while Statement2	 			 
+Statement -	continue ;
+Statement -	return Expression ;
+Statement -	In_Out
+Statement -	Expression ;	
+Statement -	Data_Def	
+Statement2 - (Expression) {Statement}  Statement3
+Statement3 - else {Statement}
+Statement3 - lambda
+In_Out - cin Op id In_Out2
+In_Out - cout Op id In_Out2
+In_Out2 - Op id In_Out2
+In_Out2 - ;
+Expression - id Expression2
+Expression - Unary_exp Expression3
+Expression - Primary Expression3
+Expression2 - = Expression Expression3
+Expression2 - (Primary) Expression3
+Expression2 - Expression3
+Expression3	- Op Expression Expression3
+Expression3 - lambda
+Op - +
+Op - -
+Op - *
+Op - /
+Op - %
+Op - <
+Op - >
+Op - <=
+Op - >=
+Op - =
+Op - ==
+Op - >>
+Op - <<
+Unary_exp - ++ Primary
+Unary_exp - -- Primary
+Primary - id
+Primary - num
+Primary - ,
+Exit - $
+Exit - Program
+Exit - Statement

@@ -1,0 +1,24 @@
+//
+// S - Line Num Num Num Num S
+// S - Circle Num Num Num S
+// S - Pixel Num Num S
+// S - Rect Num Num Num Num S
+// S - Define ID S end S
+// S - ID S
+// S - lambda
+//
+// Use the grammar rules above to enter a valid string
+// 
+// Note: You must separate each token of the string with a space
+//
+// A valid string would look as this: a b c
+//
+// While an invalid string would look as this: abc
+//
+S - Line Num Num Num Num S
+S - Circle Num Num Num S
+S - Pixel Num Num S
+S - Rect Num Num Num Num S
+S - Define ID S end S
+S - ID S
+S - lambda

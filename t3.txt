@@ -1,0 +1,22 @@
+//
+// S - a S e
+// S - B
+// B - b B e
+// B - C
+// C - c C e
+// C - d
+//
+// Use the grammar rules above to enter a valid string
+// 
+// Note: You must separate each token of the string with a space
+//
+// A valid string would look as this: a b c
+//
+// While an invalid string would look as this: abc
+//
+S - a S e
+S - B
+B - b B e
+B - C
+C - c C e
+C - d
